@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h2>歡迎光臨 my form</h2>
+        <a href="./index.html">返回</a>
+        <form action="form_action.php" method="get">
+            <label for="text">username</label>
+            <input type="text" placeholder="請輸入使用者名稱" id="text">
+            <br>
+            <label for="pwd">password</label>
+            <input id="pwd" type="password" placeholder="請輸入密碼">
+            <br>
+            <br>
+            <label for="num">donate (NT dollar)</label>
+            <input id="num" type="number" placeholder="請輸入捐款金額" required step="1000">
+            <br>
+            <br>
+            <label for="range">今天心情如何呢?</label>
+            <input id="range" type="range" min="0" max="5">
+            <br>
+            <br>
+            <p>希望得到甚麼獎品</p>
+            <label for="bi">腳踏車</label>
+            <input id="bi" name="prize" value="bicycle" type="checkbox">
+            <br>
+            <label for="ap">apple watch</label>
+            <input id="ap" name="prize" value="apple watch" type="checkbox">
+            <br>
+            <label for="la">laptop</label>
+            <input id="la" name="prize" value="laptop" type="checkbox">
+            <br><br>
+            <p>性別</p>
+            <label for="male">男</label>
+            <input id="male" name="sex" type="radio">
+            <br>
+            <label for="female">女</label>
+            <input id="female" name="sex" type="radio">
+            <br><br>
+            <label for="area">備註</label>
+            <textarea id="area" rows="3" cols="30">郭奕宏好帥</textarea>
+            <br><br>
+            <input type="submit" value="送出form">
+
+        </form>
+    </body>
+</html>
