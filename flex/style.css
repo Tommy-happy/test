@@ -1,0 +1,74 @@
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: bold;
+    margin: 20px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    /* margin: 0px; */
+    background-color: aquamarine;
+}
+
+.sec_title {
+    text-align: center;
+    font-size: 20px;
+    color: purple;
+    font-weight: bold;
+    margin: 15px 15px;
+}
+
+#frame1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+}
+#a1item {
+    flex: none;
+    padding: 20px;
+    /* justify-content: flex-start; */
+    width: 30%;
+    text-align: center;
+    /* height: 100px; */
+}
+#a2item {
+    flex: none;
+    padding: 20px;
+    /* justify-content: center; */
+    width: 30%;
+    text-align: center;
+    /* height: 100px; */
+}
+#a3item {
+    flex: none;
+    padding: 20px;
+    /* justify-content: flex-end; */
+    width: 30%;
+    text-align: center;
+    /* height: 100px; */
+}
+
+#frame2 {
+    /* justify-content: center; */
+}
+#b1item {
+    /* flex: none; */
+    /* align-items: flex-start; */
+    padding: 20px;
+    text-align: center;
+}
+#b2item {
+    /* flex: none; */
+    /* align-items: center; */
+    padding: 20px;
+    text-align: center;
+}
+#b3item {
+    /* flex: none; */
+    /* align-items: flex-end; */
+    padding: 20px;
+    text-align: center;
+}
