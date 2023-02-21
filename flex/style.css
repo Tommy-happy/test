@@ -1,6 +1,6 @@
 .title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: blueviolet;
     font-weight: bold;
     margin: 20px 20px;
@@ -14,7 +14,7 @@ body {
 
 .sec_title {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     color: purple;
     font-weight: bold;
     margin: 15px 15px;
@@ -24,31 +24,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100px;
+    height: 80px;
 }
 #a1item {
     flex: none;
     padding: 20px;
-    /* justify-content: flex-start; */
-    width: 30%;
+    width: 20%;
     text-align: center;
-    /* height: 100px; */
+    /* height: 100px;
+    background-color: azure; */
 }
 #a2item {
     flex: none;
     padding: 20px;
-    /* justify-content: center; */
-    width: 30%;
+    width: 20%;
     text-align: center;
-    /* height: 100px; */
+    /* height: 100px;
+    background-color: rgb(33, 44, 44); */
 }
 #a3item {
     flex: none;
     padding: 20px;
-    /* justify-content: flex-end; */
-    width: 30%;
+    width: 20%;
     text-align: center;
-    /* height: 100px; */
+    /* height: 100px;
+    background-color: azure; */
 }
 
 #frame2 {
@@ -70,5 +70,27 @@ body {
     /* flex: none; */
     /* align-items: flex-end; */
     padding: 20px;
+    text-align: center;
+}
+
+.hi_frame2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.hi_frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: bisque;
+    width: 80%;
+}
+.hi {
+    font-size: 33px;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
