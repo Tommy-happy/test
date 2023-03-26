@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 02</title>
+</head>
+<body>
+    <div>
+        <p class="text" onclick="x = window.setInterval(say_hi, 2000, 'tommy');">Hi how are you.<br>I'm fine thank you.</p>
+        <p class="text" onclick="x = window.clearInterval(x);">Hi how are you.<br>I'm fine thank you.</p>
+        <p class="text" onclick="window.location.href = 'https://www.google.com.tw/'">Hi how are you.<br>I'm fine thank you.</p>
+
+    </div>
+
+    <script>
+        function change2red(ele)
+        {
+            alert("change!!");
+            ele.style.color = "red";
+        }
+        function change2blue(ele)
+        {
+            ele.style.color = "blue";
+        }
+        function say_hi(str)
+        {
+            var hi="Hello~ ";
+            alert(hi + str);
+        }
+        // let ele1 = document.querySelector("p");
+        // setTimeout(change2red(ele1), 3000);
+        // setTimeout(change2blue(ele1), 3000);
+
+
+    </script>
+</body>
+</html>

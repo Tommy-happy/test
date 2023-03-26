@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <style>
+        .frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 80px; */
+            margin: 15px;
+        }
+        .item {
+            border: 2px dashed palegreen;
+            padding: 5px;
+            flex: none;
+            width: 30%;
+            text-align: center;
+        }
+        .ch1 {
+            color: blue;
+            display: none;
+        }
+        .ch2 {
+            color: red;
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            /* cursor: help; */
+            cursor: wait;
+            /* cursor: crosshair; */
+            /* cursor: not-allowed; */
+            /* cursor: zoom-in; */
+            /* cursor: grab; */
+            /* cursor: pointer; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>你好阿</h1> -->
+    <div class="frame">
+        <div class="item">主畫面</div>
+        <div style="color:blue" class="item" 
+        onmouseover="show_option_one();" onmouseout="close_option_one();"
+        >選項一</div>
+        <div style="color:red" class="item" 
+        onmouseover="show_option_two();" onmouseout="close_option_two();"
+        >選項二</div>
+    </div>
+    <hr>
+    <p class="ch0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo minima doloribus similique incidunt adipisci velit quasi qui facilis! Ea cupiditate quisquam aliquam optio numquam. Iste labore tempora porro qui <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eveniet, accusantium animi blanditiis reiciendis rerum sequi minima eligendi, consequuntur doloremque similique velit asperiores id? Maxime explicabo quae excepturi molestias necessitatibus! <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ducimus et quos quo, dolore perferendis! Quidem, corrupti sit? Aspernatur, exercitationem incidunt dicta quidem ut possimus eum laudantium laborum laboriosam facilis!</p>
+    <p class="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore ea expedita corporis ab minus praesentium velit, accusantium totam soluta necessitatibus eius dolores dolor similique consequatur corrupti quisquam? Praesentium, nemo.</p>
+    <p class="ch2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, laudantium? Saepe, rem ipsam harum porro ut quidem exercitationem vel iste magni quia voluptatum aliquid minima officiis et accusamus eius quos?</p>
+    <button >點一下</button>
+
+    <script>
+        // let hello = document.querySelector("h1");
+        // hello.style.color = "red";
+        function show_option_one()
+        {
+            console.log("滑鼠移入一");
+            let choose_zero = document.querySelector(".ch0");
+            choose_zero.style.display="none";
+
+            let choose_one = document.querySelector(".ch1");
+            choose_one.style.display="block";
+        }
+        function close_option_one()
+        {
+            console.log("滑鼠移出一");
+            let choose_one = document.querySelector(".ch1");
+            choose_one.style.display="none";
+
+            let choose_zero = document.querySelector(".ch0");
+            choose_zero.style.display="block";
+        }
+        function show_option_two()
+        {
+            console.log("滑鼠移入二");
+            let choose_zero = document.querySelector(".ch0");
+            choose_zero.style.display="none";
+
+            let choose_two = document.querySelector(".ch2");
+            choose_two.style.display="block";
+        }
+        function close_option_two()
+        {
+            console.log("滑鼠移出二");
+            let choose_one = document.querySelector(".ch2");
+            choose_one.style.display="none";
+
+            let choose_zero = document.querySelector(".ch0");
+            choose_zero.style.display="block";
+        }
+        // let time = 1;
+        // function addsomething()
+        // {
+        //     if(time%2==1)
+        //     {
+        //         let pelement = document.querySelector(".divv");
+        //         pelement.innerHTML = "這也是div標籤";
+        //         // pelement.style.fontSize="20px";
+        //         pelement.style.color="red";
+        //         pelement.className="welcome";
+        //     }
+        //     else
+        //     {
+        //         let pelement = document.querySelector(".welcome");
+        //         pelement.innerHTML = "這是div標籤";
+        //         // pelement.style.fontSize="30px";
+        //         pelement.style.color="blue";
+        //         pelement.className="divv";
+        //     }
+        //     time++;
+        // }
+        // console.log("Hello JavaSript"); //;可不加
+        // console.log("Hi Hi Hi");
+        // function arith(num1,num2)
+        // {
+        //     return (num1+num2);
+        // }
+        // n1 = arith(5,3);
+        // console.log(n1);
+        // x = window.prompt("嗨~","你好阿");
+        // console.log(x);
+        // let men = {
+        //     height:160,
+        //     weight:60,
+        //     bmi:function()
+        //     {
+        //         return this.weight/((this.height/100)*(this.height/100))
+        //     },
+        //     name:"Tommy",
+        //     health:function()
+        //     {
+        //         if(this.bmi()<20)
+        //         {
+        //             console.log("too thin");
+        //         }
+        //         else if(this.bmi()>30)
+        //         {
+        //             console.log("too fat");
+        //         }
+        //         else
+        //         {
+        //             console.log("perfect");
+        //         }
+        //     }
+        // }
+        // let man = new Object();
+        // man.height;
+        // man.weight;
+        // man.bmi=function()
+        // {
+        //     return this.weight/((this.height/100)*(this.height/100))
+        // }
+        // man.health = function()
+        // {
+        //     if(this.bmi()<20)
+        //         {
+        //             console.log("too thin");
+        //         }
+        //         else if(this.bmi()>30)
+        //         {
+        //             console.log("too fat");
+        //         }
+        //         else
+        //         {
+        //             console.log("perfect");
+        //         }
+        // }
+        // man.math = function(n1,n2)
+        // {
+        //     return n1+n2;
+        // }
+        // let arr_1 = new Array();
+        // arr_1.push("hello",13);
+        // // arr_1.push(13);
+        // let arr_2 = [0,1,2];
+        // console.log(window);
+        // // console.log(document.body.innerHTML);
+        // // window.document.body.innerHTML = "hi hi tommy";
+        // // console.log(document.body.className);
+        // // console.log(document.body.id);
+        // let item1Obj = window.document.querySelector("#item1");
+        // item1Obj.innerHTML = "javascript入侵";
+        // item1Obj.classNmae = "itemone";
+    </script>
+    
+    
+</body>
+</html>
