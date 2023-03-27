@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+=======
+new document!
+b modified
+
+>>>>>>> 88f2991d5a83e4557127fe67424f440bddc83cda
